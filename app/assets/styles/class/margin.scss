@@ -1,0 +1,88 @@
+// 生成0-50的偶数margin
+@for $i from 0 through 200 {
+	@if $i%2 == 0 {
+    .m-#{$i} { 
+			margin: #{$i}px; 
+		}
+  }
+}
+@for $i from 0 through 200 {
+	@if $i%2 == 0 {
+		.m-l-r-#{$i} { 
+			margin: 0 #{$i}px; 
+		}
+  }
+}
+@for $i from 0 through 200 {
+	@if $i%2 == 0 {
+		.m-t-b-#{$i} { 
+			margin: #{$i}px 0; 
+		}
+  }
+}
+@for $i from 0 through 200 {
+	@if $i%2 == 0 {
+		.mt-#{$i} { 
+			margin-top: #{$i}px; 
+		}
+  }
+}
+/* 外边距上负数 */
+@for $i from 0 through 200 {
+	@if $i%2 == 0 {
+		.-mt-#{$i} { 
+			margin-top: -#{$i}px; 
+		}
+  }
+}
+@for $i from 0 through 200 {
+	@if $i%2 == 0 {
+		.mr-#{$i} { 
+			margin-right: #{$i}px; 
+		}
+  }
+}
+/* 外边距右负数 */
+@for $i from 0 through 200 {
+	@if $i%2 == 0 {
+		.-mr-#{$i} { 
+			margin-right: -#{$i}px; 
+		}
+  }
+}
+@for $i from 0 through 200 {
+	@if $i%2 == 0 {
+		.ml-#{$i} { 
+			margin-left: #{$i}px; 
+		}
+  }
+}
+/* 外边距左负数 */
+@for $i from 0 through 200 {
+	@if $i%2 == 0 {
+		.-ml-#{$i} { 
+			margin-left: -#{$i}px; 
+		}
+  }
+}
+@for $i from 0 through 200 {
+	@if $i%2 == 0 {
+		.mb-#{$i} { 
+			margin-bottom: #{$i}px; 
+		}
+  }
+}
+/* 外边距下负数 */
+@for $i from 0 through 200 {
+	@if $i%2 == 0 {
+		.-mb-#{$i} { 
+			margin-bottom: -#{$i}px; 
+		}
+  }
+}
+.mb-_8 {
+	margin-bottom: -8px;
+}
+.m-l-r-24_i {
+	margin: 0 24px !important;
+}

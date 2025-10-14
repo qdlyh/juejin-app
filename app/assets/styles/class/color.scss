@@ -1,0 +1,68 @@
+.col-main{
+	color: $mainColor;
+}
+.col-red {
+	color: $red;
+}
+.col-green {
+	color: $green;
+}
+.col-1 {
+	color: $color1;
+}
+.col-3 {
+	color: $color3;
+}
+.col-4 {
+	color: $color4;
+}
+.col-5 {
+	color: $color5;
+}
+.col-6 {
+	color: $color6;
+}
+.col-7 {
+	color: $color7;
+}
+.col-8 {
+	color: $color8;
+}
+.col-9 {
+	color: $color9;
+}
+.col-14 {
+	color: $color14;
+}
+.col-15 {
+	color: $color15;
+}
+.col-17 {
+	color: $color17;
+}
+.col-18 {
+	color: $color18;
+}
+.col-19 {
+	color: $color19;
+}
+.col-21 {
+	color: $color21;
+}
+
+.col-h-main {
+	&:hover {
+		transition: .3s;
+		color: $mainColor;
+	}
+}
+.col-h-red {
+	&:hover {
+		transition: .3s;
+		color: $color8;
+	}
+}
+
+.col-1_7 {
+	color: rgba(255,255,255, .7);
+}

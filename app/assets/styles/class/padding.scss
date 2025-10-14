@@ -1,0 +1,111 @@
+.p-0-16 {
+	padding: 0px 16px;
+}
+.p-4-16 {
+	padding: 4px 16px;
+}
+.p-8-16 {
+	padding: 8px 16px;
+}
+.p-12-16 {
+	padding: 12px 16px;
+}
+.p-10-20 {
+	padding: 10px 20px;
+}
+.p-12-20 {
+	padding: 12px 20px;
+}
+.p-16-24 {
+	padding: 16px 24px;
+}
+.p-20-24 {
+	padding: 20px 24px;
+}
+.p-16-32 {
+	padding: 16px 32px;
+}
+.pb-140{
+	padding-bottom: 140px;
+}
+@for $i from 0 through 50 {
+	@if $i%2 == 0 {
+    .p-#{$i} { 
+			padding: #{$i}px; 
+		}
+  }
+}
+@for $i from 0 through 50 {
+	@if $i%2 == 0 {
+		.p-l-r-#{$i} { 
+			padding: 0 #{$i}px; 
+		}
+  }
+}
+@for $i from 0 through 50 {
+	@if $i%2 == 0 {
+		.p-t-b-#{$i} { 
+			padding: #{$i}px 0; 
+		}
+  }
+}
+@for $i from 0 through 50 {
+	@if $i%2 == 0 {
+		.pt-#{$i} { 
+			padding-top: #{$i}px; 
+		}
+  }
+}
+/* 内边距上负数 */
+@for $i from 0 through 50 {
+	@if $i%2 == 0 {
+		.-pt-#{$i} { 
+			padding-top: -#{$i}px; 
+		}
+  }
+}
+@for $i from 0 through 60 {
+	@if $i%2 == 0 {
+		.pr-#{$i} { 
+			padding-right: #{$i}px; 
+		}
+  }
+}
+/* 内边距右负数 */
+@for $i from 0 through 60 {
+	@if $i%2 == 0 {
+		.-pr-#{$i} { 
+			padding-right: -#{$i}px; 
+		}
+  }
+}
+@for $i from 0 through 50 {
+	@if $i%2 == 0 {
+		.pl-#{$i} { 
+			padding-left: #{$i}px; 
+		}
+  }
+}
+/* 内边距左负数 */
+@for $i from 0 through 50 {
+	@if $i%2 == 0 {
+		.-pl-#{$i} { 
+			padding-left: -#{$i}px; 
+		}
+  }
+}
+@for $i from 0 through 80 {
+	@if $i%2 == 0 {
+		.pb-#{$i} { 
+			padding-bottom: #{$i}px; 
+		}
+  }
+}
+/* 内边距下负数 */
+@for $i from 0 through 80 {
+	@if $i%2 == 0 {
+		.-pb-#{$i} { 
+			padding-bottom: -#{$i}px; 
+		}
+  }
+}

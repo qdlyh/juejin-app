@@ -1,0 +1,106 @@
+.p-rel {
+	position: relative;
+}
+.p-abs {
+	position: absolute;
+}
+.fixed {
+	position: fixed;
+}
+.abs-t-l {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.abs-r {
+	position: absolute;
+	right: 0;
+}
+@for $i from 0 through 100 {
+	@if $i%2 == 0 {
+		.top-#{$i} { 
+			top: #{$i}px; 
+		}
+  }
+}
+@for $i from 0 through 100 {
+	@if $i%2 == 0 {
+		.-top-#{$i} { 
+			top: -#{$i}px; 
+		}
+  }
+}
+@for $i from 0 through 100 {
+	@if $i%2 == 0 {
+		.bottom-#{$i} { 
+			bottom: #{$i}px; 
+		}
+  }
+}
+@for $i from 0 through 100 {
+	@if $i%2 == 0 {
+		.-bottom-#{$i} { 
+			bottom: -#{$i}px; 
+		}
+  }
+}
+@for $i from 0 through 100 {
+	@if $i%2 == 0 {
+		.left-#{$i} { 
+			left: #{$i}px; 
+		}
+  }
+}
+@for $i from 0 through 100 {
+	@if $i%2 == 0 {
+		.-left-#{$i} { 
+			left: -#{$i}px; 
+		}
+  }
+}
+@for $i from 0 through 100 {
+	@if $i%2 == 0 {
+		.right-#{$i} { 
+			right: #{$i}px; 
+		}
+  }
+}
+@for $i from 0 through 100 {
+	@if $i%2 == 0 {
+		.-right-#{$i} { 
+			right: -#{$i}px; 
+		}
+  }
+}
+@for $i from 0 through 999 {
+	@if $i%2 == 0 {
+		.z-index-#{$i} { 
+			z-index: #{$i}; 
+		}
+  }
+}
+// 垂直居中
+.center-Y {
+	position: absolute;
+	@include absCenter(Y);
+}
+// 水平居中
+.center-X {
+	position: absolute;
+	@include absCenter(X);
+}
+// 水平垂直居中
+.center {
+	position: absolute;
+	@include absCenter(C);
+}
+.z-index-9 {
+    z-index: 9;
+}
+.z-index--9 {
+	z-index: -9;
+}
+
+.l--40 {
+	left: -40px;
+}

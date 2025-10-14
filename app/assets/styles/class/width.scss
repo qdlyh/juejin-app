@@ -1,0 +1,124 @@
+// 生成1-200的偶数宽度
+@for $i from 1 through 1400 {
+	@if $i%2 == 0 {
+    .w-#{$i} {
+			width: #{$i}px;
+		}
+  }
+}
+@for $i from 1 through 500 {
+	@if $i%2 == 0 {
+    .min-w-#{$i} {
+			min-width: #{$i}px;
+		}
+  }
+}
+@for $i from 1 through 500 {
+	@if $i%2 == 0 {
+    .max-w-#{$i} {
+			max-width: #{$i}px;
+		}
+  }
+}
+@for $i from 1 through 200 {
+	.w-#{$i}p {
+		width: #{$i}+'%';
+	}
+}
+@for $i from 1 through 1000 {
+	@if $i%2 == 0 {
+    .w-calc-#{$i} {
+			width: calc(100% - #{$i}px);
+		}
+  }
+}
+.w-320 {
+	width: 320px;
+}
+.w-360 {
+	width: 360px;
+}
+.w-400 {
+	width: 400px;
+}
+.w-430 {
+	width: 430px;
+}
+.w-460 {
+	width: 460px;
+}
+
+.w-1000 {
+	width: 1000px;
+}
+.w-1050 {
+	width: 1050px;
+}
+.w-calc-14 {
+	width: calc(100% - 14px);
+}
+.w-calc-20 {
+	width: calc(100% - 20px);
+}
+.w-calc-48 {
+	width: calc(100% - 48px);
+}
+.w-calc-88 {
+	width: calc(100% - 88px);
+}
+.w-calc-160 {
+	width: calc(100% - 160px);
+}
+.w-calc-400 {
+	width: calc(100% - 400px);
+}
+.w-calc-460 {
+	width: calc(100% - 460px);
+}
+
+.w-20p {
+	width: 20%;
+}
+.w-33-3p{
+	width: 33.33%;
+}
+.w-40p {
+	width: 40%;
+}
+.w-50p {
+	width: 50%;
+}
+.w-75p {
+	width: 75%;
+}
+.w-80p {
+	width: 80%;
+}
+.w-90p {
+	width: 90%;
+}
+.w-93-33p{
+	width: 93.33%;
+}
+.w-100p {
+	width: 100%;
+}
+.max-w-200 {
+	max-width: 200px;
+}
+.max-w-600 {
+	max-width: 600px;
+}
+.min-w-40{
+	min-width: 40px;
+}
+.min-w-98{
+	min-width: 98px;
+}
+.min-w-1000 {
+	min-width: 1000px;
+}
+
+.max-w-calc-24 {
+	max-width: calc(100% - 24px);
+}

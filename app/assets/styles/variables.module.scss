@@ -1,0 +1,71 @@
+// base color
+$blue: #324157;
+$light-blue: #3A71A8;
+$red: #C03639;
+$pink: #E65D6E;
+$green: #30B08F;
+$tiffany: #4AB7BD;
+$yellow: #FEC171;
+$panGreen: #30B08F;
+$mainColor: #336eff;
+
+$color1: #fff;
+$color2: #f7f7f8;
+$color3: #C2C4CC;
+$color4: #9094A2;
+$color5:#E3E4E8;
+$color6: #4A4E59;
+$color7: #99B7FF;
+$color8: #F13939;
+$color9:#999;
+$color10:#dfdfdf;
+$color11:#fafafa;
+$color12:#eee;
+$color13:#f3f7ff;
+$color14: #FAAD14;
+$color15: #45CEA9;
+$color16: #D6E2FF;
+$color17: #525252;
+$color18: #2958cc;
+$color19: #2E3038;
+$color20: #F4F7FF;
+$color21: #606266;
+$color22: #FFC7AC;
+
+// 默认菜单主题风格
+$base-menu-color: #bfcbd9;
+$base-menu-color-active: #f4f4f5;
+$base-menu-background: #2958cc;
+$base-logo-title-color: #ffffff;
+
+$base-menu-light-color: rgba(0, 0, 0, 0.7);
+$base-menu-light-background: #336eff;
+$base-logo-light-title-color: #001529;
+
+$base-sub-menu-background: #1f2d3d;
+$base-sub-menu-hover: #001528;
+
+// 自定义暗色菜单风格
+/**
+$base-menu-color:hsla(0,0%,100%,.65);
+$base-menu-color-active:#fff;
+$base-menu-background:#001529;
+$base-logo-title-color: #ffffff;
+
+$base-menu-light-color:rgba(0,0,0,.70);
+$base-menu-light-background:#ffffff;
+$base-logo-light-title-color: #001529;
+
+$base-sub-menu-background:#000c17;
+$base-sub-menu-hover:#001528;
+*/
+
+$--color-primary: #409EFF;
+$--color-success: #67C23A;
+$--color-warning: #E6A23C;
+$--color-danger: #F56C6C;
+$--color-info: #909399;
+
+$base-sidebar-width: 68px;
+
+// 变量已配置完成，可在SCSS文件中直接使用

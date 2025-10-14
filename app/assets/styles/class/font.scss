@@ -1,0 +1,64 @@
+// 生成2-50的偶数行高
+@for $i from 0 through 50 {
+	@if $i%2 == 0 {
+    .fsz-#{$i} { 
+			font-size: #{$i}px; 
+		}
+  }
+}
+
+// font-weight
+.fw-normal {
+	font-weight: normal;
+}
+.fw-medium {
+	font-weight: 500;
+}
+.fw-bold {
+	font-weight: bold;
+}
+
+// font-style:italic
+.fs-i {
+	font-style: italic;
+}
+.whs-p{
+	white-space: pre-wrap
+}
+
+.letter-s_0 {
+	letter-spacing: 0;
+}
+// text-align
+.t-a-c {
+	text-align: center;
+}
+.t-a-l {
+	text-align: left;
+}
+.t-a-r {
+	text-align: right;
+}
+// white-space
+.no-wrap {
+	white-space: nowrap;
+}
+.auto-wrap {
+	white-space: normal;
+}
+
+.pre-wrap {
+  white-space: pre-wrap;
+}
+/* /n 字符换行 */
+.pre-line {
+  white-space: pre-line;
+}
+
+.break-spaces {
+  white-space: break-spaces;
+}
+
+.word-break {
+  word-break: break-all;
+}

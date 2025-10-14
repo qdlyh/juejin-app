@@ -1,0 +1,137 @@
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin scrollBar($a:14px,$b:14px,$col:#d3dce6) {
+    /* 滚动条整体样式 */
+	&::-webkit-scrollbar {
+		width: $a;  /* 高宽分别对应横竖滚动条的尺寸 */
+		height: $b;
+	}
+	/* 滚动条里面小方块 */
+	&::-webkit-scrollbar-thumb {
+		background-color: $col;
+		border-radius: 8px;
+	}
+	/* 滚动条里面轨道 */
+	&::-webkit-scrollbar-track {
+		display: none;
+	}
+  /* 滚动条的轨道的两端按钮，允许通过点击微调小方块的位置。 */
+  &::-webkit-scrollbar-button {
+      display: none;
+  }
+  /* 两个滚动条的交汇处 */
+  &::-webkit-scrollbar-corner {
+      display: none;
+  }
+	&.scrollbar-y-opacity {
+		/* 滚动条里面小方块 */
+		&::-webkit-scrollbar-thumb {
+			background-color: transparent;
+		}
+	}
+}
+
+@mixin relative {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin pct($pct) {
+  width: #{$pct};
+  position: relative;
+  margin: 0 auto;
+}
+
+@mixin triangle($width, $height, $color, $direction) {
+  $width: $width/2;
+  $color-border-style: $height solid $color;
+  $transparent-border-style: $width solid transparent;
+  height: 0;
+  width: 0;
+
+  @if $direction==up {
+    border-bottom: $color-border-style;
+    border-left: $transparent-border-style;
+    border-right: $transparent-border-style;
+  }
+
+  @else if $direction==right {
+    border-left: $color-border-style;
+    border-top: $transparent-border-style;
+    border-bottom: $transparent-border-style;
+  }
+
+  @else if $direction==down {
+    border-top: $color-border-style;
+    border-left: $transparent-border-style;
+    border-right: $transparent-border-style;
+  }
+
+  @else if $direction==left {
+    border-right: $color-border-style;
+    border-top: $transparent-border-style;
+    border-bottom: $transparent-border-style;
+  }
+}
+
+@mixin mainColorRgba($num) {
+  color: rgba(51, 110, 255, $num);
+}
+@mixin mainBgColorRgba($num) {
+  background-color: rgba(51, 110, 255, $num);
+}
+@mixin mainBdColorRgba($num) {
+  border-color: rgba(51, 110, 255, $num);
+}
+
+/*
+* 单行文本溢出显示省略号
+* @include SetOneLine();
+*/
+@mixin SetOneLine() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/*
+* 多行文本溢出显示省略号
+* 传参 - 显示多少行
+* @include SetLines(2);
+*/
+@mixin SetLines( $n ) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $n;   //控制显示的文本的行数
+  white-space: pre-line;
+  overflow: hidden;
+}
+
+/*
+* 定位，居中
+* @include absCenter(Y)
+*/
+@mixin absCenter($n:C) {
+  position: absolute;
+  @if $n==C {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  @else if $n==X {
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  @else if $n==Y {
+    top: 50%;
+    transform: translate(0,-50%);
+  }
+}

@@ -1,0 +1,85 @@
+
+.b-none{
+	border:none
+}
+
+.b-col-main {
+	border: 1PX solid $mainColor;
+}
+.b-col-1 {
+	border: 1PX solid $color1;
+}
+.b-col-2 {
+	border: 1px solid $color2;
+}
+.b-col-3 {
+	border: 1px solid $color3;
+}
+.b-col-5 {
+	border: 1px solid $color5;
+}
+.b-col-6 {
+	border: 1px solid $color6;
+}
+.b-col-1_7 {
+	border: 1px solid rgba(255,255,255,0.7);
+}
+
+.bt-col2 {
+	border-top: 1px solid $color2;
+}
+.bt-col-3 {
+	border-top: 1px solid $color3;
+}
+.bt-col-5 {
+	border-top: 1px solid $color5;
+}
+.br-col-5 {
+	border-right: 1px solid $color5;
+}
+.bl-col-3 {
+	border-left: 1px solid $color3;
+}
+.bl-col-5 {
+	border-left: 1px solid $color5;
+}
+.bb-col-5 {
+	border-bottom: 1px solid $color5;
+}
+
+.bt-sd-5{
+	box-shadow: 0px -5px 10px -5px $color5;
+}
+
+.bt-last-none {
+	&:last-child{
+		border-top: none;
+	}
+}
+.bb-last-none {
+	&:last-child{
+		border-bottom: none;
+	}
+}
+// border-radius
+.radius-2 {
+	border-radius: 2px;
+}
+.radius-4 {
+	border-radius: 4px;
+}
+.radius-8 {
+	border-radius: 8px;
+}
+.radius-14 {
+	border-radius: 14px;
+}
+.radius-20 {
+	border-radius: 20px;
+}
+.radius-100 {
+	border-radius: 100px;
+}
+.radius-50p {
+	border-radius: 50%;
+}
