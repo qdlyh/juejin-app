@@ -7,6 +7,7 @@ import { Input, Space } from 'antd';
 import { Button, Flex } from 'antd';
 import type { GetProps } from 'antd';
 import headerStyles from './header.module.scss';
+import Register from '@/app/views/register/page';
 // 从Ant Design的Input.Search组件获取其Props类型定义
 // GetProps是Ant Design提供的类型工具，用于提取组件的属性类型
 type SearchProps = GetProps<typeof Input.Search>;
@@ -45,7 +46,8 @@ export default function Header() {
           <div className="fr">
             <Space>
               <Button type="primary">登录</Button>
-              <Button>注册</Button>
+              {/* <Button>注册</Button> */}
+              <Register />
             </Space>
           </div>
         </Col>

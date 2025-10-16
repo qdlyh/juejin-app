@@ -2,6 +2,8 @@
 @import './variables.module.scss';
 @import './mixin.scss';
 
+@import './antd/modal.scss';
+
 @import './class/position.scss';
 @import './class/display.scss';
 @import './class/width.scss';
@@ -26,7 +28,7 @@ body {
   font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
 }
 html, body {
-  color: #333;
+  color: #252933;
   font-size: 16px;
 }
 
@@ -132,7 +134,7 @@ div:focus {
 
 //main-container全局样式
 .app-container {
-  height: 100%;
+  height: calc(100% - 64px);
   color: $color6;
   font-size: 14px;
   background-color: #f7f7f7;
